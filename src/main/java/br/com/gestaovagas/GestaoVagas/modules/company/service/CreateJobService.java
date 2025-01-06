@@ -21,7 +21,7 @@ public class CreateJobService {
         headers.setBearerAuth(token);
 
         HttpEntity<CreateJobsDTO> request = new HttpEntity<>(jobs, headers);
-        var url = hostAPIGestaoVagas.concat("/company/job");
+        var url = hostAPIGestaoVagas.concat("/company/job/");
 
         var result = rt.postForObject(url, request, String.class);
 
