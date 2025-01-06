@@ -122,7 +122,7 @@ public class CandidateController {
         }
 
         model.addAttribute("candidate", candidate);
-        return "candidare/crate";
+        return "candidate/create";
     }
 
     private String getToken(){

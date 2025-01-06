@@ -24,9 +24,10 @@ public class ListAllJobsCompanyService {
 
         HttpEntity<Object> httpEntity = new HttpEntity<>(headers);
 
-        ParameterizedTypeReference<List<JobDTO>> responseType = new ParameterizedTypeReference<List<JobDTO>>() {};
+        ParameterizedTypeReference<List<JobDTO>> responseType = new ParameterizedTypeReference<List<JobDTO>>(){
+        };
 
-        var url = hostAPIGestaoVagas.concat("/company/job");
+        var url = hostAPIGestaoVagas.concat("/company/job/");
 
         var result = rt.exchange(url, HttpMethod.GET, httpEntity, responseType);
 
