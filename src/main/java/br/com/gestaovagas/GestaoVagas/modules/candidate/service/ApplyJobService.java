@@ -24,7 +24,7 @@ public class ApplyJobService {
 
         HttpEntity<UUID> request = new HttpEntity<>(idJob, headers);
 
-        String url = hostAPIGestaoVagas.concat("/candidate/job/apply");
+        String url = hostAPIGestaoVagas.concat("/candidate/jobs/apply");
         var result = rt.postForObject(url, request, String.class);
 
         System.out.println(result);
