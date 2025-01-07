@@ -99,9 +99,9 @@ public class CandidateController {
         return "candidate/jobs";
     }
 
-    @GetMapping("/jobs/apply")
+    @PostMapping("/jobs/apply")
     @PreAuthorize("hasRole('CANDIDATE')")
-    public String applyJob(@RequestParam("jobId")UUID jobId){
+    public String applyJob(@RequestParam("jobId") UUID jobId) {
         this.applyJobService.execute(getToken(), jobId);
         return "redirect:/candidate/jobs";
     }
