@@ -25,8 +25,6 @@ public class CreateJobService {
 
         var result = rt.postForObject(url, request, String.class);
 
-        System.out.println(result);
-
         return result;
     }
 }

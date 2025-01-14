@@ -31,7 +31,6 @@ public class LoginCompanyService {
         var url = hostAPIGestaoVagas.concat("/company/auth");
         var result = rt.postForObject(url, request, Token.class);
 
-        System.out.println(result);
         return  result;
     }
 }

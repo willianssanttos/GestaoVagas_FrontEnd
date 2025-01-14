@@ -27,7 +27,6 @@ public class ProfileCandidateService {
         var url = hostAPIGestaoVagas.concat("/candidate/");
         try {
             var result = rt.exchange(url, HttpMethod.GET, request, ProfileUserDTO.class);
-            System.out.println(result);
             return result.getBody();
         } catch (Unauthorized ex){
             throw new HttpClientErrorException(HttpStatus.UNAUTHORIZED);

@@ -33,8 +33,6 @@ public class CandidateService {
 
         var result = rt.postForObject(url, request, Token.class);
 
-        System.out.println(result);
-
         return result;
     }
 }

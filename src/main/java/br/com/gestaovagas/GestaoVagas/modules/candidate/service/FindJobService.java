@@ -36,7 +36,6 @@ public class FindJobService {
 
         try {
             var result = rt.exchange(builder.toUriString(), HttpMethod.GET, request, responseType);
-            System.out.println(result);
             return result.getBody();
         } catch (Unauthorized ex){
             throw new HttpClientErrorException(HttpStatus.UNAUTHORIZED);

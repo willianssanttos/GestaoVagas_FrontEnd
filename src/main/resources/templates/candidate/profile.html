@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
         <title>Perfil do Candidato</title>
     </head>
 
     <body class="bg-gray-900">
         <nav class="bg-gray-800">
-            <div class="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
-                <div class="relative p-4 flex h-16 items-center justify-start text-white">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-start text-white">
                     <div class="space-x-4">
                         <a href="/candidate/profile" class="text-white text-lg font-semibold">Profile</a>
                         <a href="/candidate/jobs" class="text-white text-lg font-semibold">Vagas</a>

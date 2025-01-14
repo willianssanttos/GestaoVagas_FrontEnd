@@ -25,6 +25,6 @@ public class CreateCandidateService {
         var url = hostAPIGestaoVagas.concat("/candidate/");
 
         var result = rt.postForObject(url, request, String.class);
-        System.out.println(result);
+
     }
 }
